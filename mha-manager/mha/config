@@ -1,0 +1,27 @@
+[server default]
+# mysql user and password
+user=mha
+password=mhapass
+
+# ssh user
+ssh_user=root
+
+# working directory on the manager
+manager_workdir=/var/log/masterha/
+# manager log file
+manager_log=/var/log/masterha/
+master_binlog_dir= /var/lib/mysql
+# working directory on MySQL servers
+remote_workdir=/var/log/masterha/
+
+[server1]
+# master1
+hostname=mysql-master
+
+[server2]
+# slave1
+hostname=mysql-slave1
+
+[server3]
+# slave2
+hostname=mysql-slave2
